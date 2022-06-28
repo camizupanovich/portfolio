@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.divproj{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(172, 172, 172);
+    width: 100%;
+    box-shadow: 1px 2px 10px rgba(128, 128, 128, 0.163);
+    border-radius: 30px;
+}
+.title{
+    background: linear-gradient(90deg,  #2410ff 0%, 
+    #7dcdfc 25%,#c26ef9 75%,#0091ff 100%);
+    background-clip: text;
+    font-weight: bolder;
+    font-size: 45px;
+    color: transparent;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    color: #0091ff;
+    font-size: 20px;
+}
+.img{
+    width:100%;
+}
+.link{
+    position: absolute;
+    top: 75%;
+    left: 23%;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-width: 100px;
+    background-color: rgba(0, 0, 0, 0.141);
+    padding: 3px 30px;
+    border-radius: 30px;
+    color: black;
+}
+.headTitle{
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color:rgb(16, 0, 30);
+}
+@media only screen and (max-width:800px){
+    .divproj{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 100%;
+    }
+    .headTitle{
+        font-size: 25px;
+    }
+    .title{
+        font-size: 25px;
+    }
+}
+.divText{
+    padding: 0px 30px;
+}
+.tech{
+    width: 24px;
+    margin: 6px;
+}
+.text{
+    color: rgba(0, 0, 0, 0.67);
+    font-style: oblique;
+}
+.contTitle{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contImg{
+    position: relative;
+}
+.contPoint{
+    display: flex;
+    flex-direction: row;
+}
+.point{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+    cursor: pointer;
+}
+.point:focus{
+    background-color: #0091ff;
+    border: none;
+}

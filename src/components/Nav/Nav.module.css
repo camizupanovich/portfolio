@@ -1,0 +1,15 @@
+.sideBar{
+    position: fixed;
+    top: 40%;
+    right: 0.5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+@media only screen and (max-width:800px){
+    .sideBar{
+        display: none;
+    }
+}

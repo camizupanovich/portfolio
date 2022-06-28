@@ -1,0 +1,37 @@
+.container{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../assets/bg_cert.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:200px 0px;
+}
+.title{
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color:rgba(255, 255, 255, 0.525);
+    text-shadow: 1px 2px 10px rgb(163, 220, 255);
+}
+
+.paper{
+    width: 50%;
+}
+
+@media only screen and (max-width:800px){
+    .title{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .paper{
+        width: 70%;
+    }
+    .container{
+        display: flex;
+        justify-content:center;
+    }
+}

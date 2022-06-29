@@ -37,8 +37,7 @@ export default function Projects(){
                     <p className={s.title}>{p.title}</p>
                     <p className={s.text}>"{p.subtitle}"</p>
                     <hr/>
-                    <p className={s.subtitle}>___TECHNOLOGIES___</p>
-                    {p.tech?.map(t=><img key={t} alt={t} className={s.tech} src={require(`../../assets/icon/${t}.svg`)}/>)}
+                    <div className={s.techCont}>{p.tech?.map(t=><img title={t} key={t} alt={t} className={s.tech} src={require(`../../assets/icon/${t}.svg`)}/>)}</div>
                </div>
             </div>)}
             <div className={s.contPoint}>

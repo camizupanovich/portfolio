@@ -76,10 +76,18 @@
 }
 .divText{
     padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .tech{
     width: 24px;
     margin: 6px;
+
+}
+.techCont{
+    display: flex;
+    justify-content: center;
 }
 .text{
     color: rgba(0, 0, 0, 0.67);

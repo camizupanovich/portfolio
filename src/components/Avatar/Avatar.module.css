@@ -23,13 +23,13 @@
     font-weight: bold;
 }
 .name{
-    color: rgba(81, 25, 248, 0.444);
+    color: rgba(65, 2, 255, 0.444);
     font-weight: bold;
     font-size: 62px;
     background-image: url('https://i.pinimg.com/originals/32/95/ec/3295eccd4245fde617fea18b2c0cfc17.gif');
     background-clip: text;
     background-position-y: center;
-    text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.251);
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.251);
 }
 .avatar{
     border: 10px solid rgba(255, 255, 255, 0.847);

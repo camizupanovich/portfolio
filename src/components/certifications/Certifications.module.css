@@ -2,20 +2,30 @@
     position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content:space-around;
     align-items: center;
     flex-direction: column;
     background-image: url('../../assets/bg_cert.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding:200px 0px;
+    padding:95px 0px;
+}
+.containerD{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../assets/bg_certD.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:95px 0px;
 }
 .title{
-    font-weight: bolder;
-    font-size: 45px;
-    letter-spacing: 3px;
-    color:rgba(255, 255, 255, 0.525);
-    text-shadow: 1px 2px 10px rgb(163, 220, 255);
+    color: rgba(65, 2, 255, 0.63);
+    font-weight: bold;
+    font-size: 62px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.251);
+    margin-bottom: 60px;
 }
 
 .paper{

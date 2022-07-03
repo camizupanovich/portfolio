@@ -1,9 +1,9 @@
 import React from "react";
 import s from './Skills.module.css'
 
-export default function Skills(){
+export default function Skills({dark}){
     return(
-    <div className={s.bg}>
+    <div className={dark? s.bgD : s.bg}>
         <div className={s.container}>
         <div className={s.tSkills}>
             <span className={s.tSk}>JavaScript</span>

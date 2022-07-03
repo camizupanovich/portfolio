@@ -23,13 +23,10 @@
     font-weight: bold;
 }
 .name{
-    color: rgba(65, 2, 255, 0.444);
+    color: rgba(65, 2, 255, 0.63);
     font-weight: bold;
     font-size: 62px;
-    background-image: url('https://i.pinimg.com/originals/32/95/ec/3295eccd4245fde617fea18b2c0cfc17.gif');
-    background-clip: text;
-    background-position-y: center;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.251);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.251);
 }
 .avatar{
     border: 10px solid rgba(255, 255, 255, 0.847);
@@ -50,4 +47,31 @@
     font-style: oblique;
     color: rgb(99, 99, 99);
     font-size: 20px;
+    cursor:copy;
+}
+.btn{
+    background-color:rgba(65, 2, 255, 0.63) ;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 0px black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btnR{
+    background-color: rgb(0, 156, 253);
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 0px black;
+}
+.row{
+    display: flex;
 }

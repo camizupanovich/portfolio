@@ -5,6 +5,7 @@
     min-height: 100vh;
     padding-top: 60px;
     background: linear-gradient(0deg,white 0%,  rgb(238, 237, 237) 100%);
+    position: relative;
 }
 .containerD{
     display: flex;
@@ -13,11 +14,12 @@
     min-height: 100vh;
     padding-top: 60px;
     background-color:  rgba(14,11,21);
+    position: relative;
 }
 .divproj{
     position: relative;
     display: grid;
-    grid-template-columns: 40% 30%;
+    grid-template-columns: 40% 48%;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -132,4 +134,46 @@
 .contImg{
     position: relative;
     padding: 20px;
+}
+.btnPrev{
+    position: absolute;
+    top: 40%;
+    left:3%;
+    background-color: rgba(255, 255, 255, 0.171);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btnNext{
+    position: absolute;
+    top: 40%;
+    right:3%;
+    background-color: rgba(255, 255, 255, 0.171);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.contPag{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.itemPag{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    border: 1px solid rgb(109, 109, 109);
+    margin: 5px;
+    cursor: pointer;
+}
+.itemFocus{
+    width: 18px;
+    height: 18px;
+    border-radius:50%;
+    margin: 5px;
+    background-color: #0091ff;
+    cursor: pointer;
 }

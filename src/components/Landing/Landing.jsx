@@ -28,7 +28,7 @@ export default function Landing(){
             <div>
             <a href='#skills' style={dark? darkStyles: ligthStyles} className={s.item}>Skills</a>
             <a href='#projects' style={dark? darkStyles: ligthStyles} className={s.item}>Projects</a>
-            <a href='#certifications' style={dark? darkStyles: ligthStyles} className={s.item}>Certificate</a></div>
+            <a href='#certifications' style={dark? darkStyles: ligthStyles} className={s.item}>Certificates</a></div>
             <div>
             {dark? 
             <i onClick={()=>setDark(false)} className='bx bxs-sun bx-md' style={{color:'#ffffff'}} ></i>:
@@ -53,7 +53,7 @@ export default function Landing(){
             <div onClick={()=>setModal(false)}><i class='bx bx-x-circle bx-sm'></i></div>
             <a onClick={()=>setModal(false)} href='#skills' style={dark? darkStyles: ligthStyles} className={s.modalitem}>SKILLS</a>
             <a onClick={()=>setModal(false)} href='#projects' style={dark? darkStyles: ligthStyles} className={s.modalitem}>PROJECTS</a>
-            <a onClick={()=>setModal(false)} href='#certifications' style={dark? darkStyles: ligthStyles} className={s.modalitem}>CERTIFICATIONS</a>
+            <a onClick={()=>setModal(false)} href='#certifications' style={dark? darkStyles: ligthStyles} className={s.modalitem}>CERTIFICATES</a>
             </div>}
             <section id='home'><Avatar/></section>
             <section id='skills'><Skills dark={dark}/></section>

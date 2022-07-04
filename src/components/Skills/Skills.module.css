@@ -1,10 +1,12 @@
 .bg{
     background: linear-gradient(0deg, rgb(238, 237, 237) 0%, rgb(62, 25, 140) 100%);
     position: relative;
+    padding-bottom: 40px;
 }
 .bgD{
     background: linear-gradient(0deg, rgb(14, 11, 21) 0%, black 100%);
     position: relative;
+    padding-bottom: 40px;
 }
 .container{
     min-height: 100vh;
@@ -33,7 +35,7 @@
 .col{
     margin-top: 150px;
     display: grid;
-    grid-template-columns: 30% 40%;
+    grid-template-columns: 30% 50%;
     justify-content: center;
     width: 100%;
 }
@@ -108,4 +110,44 @@
         padding: 5px;
         font-size: 15px;
     }
+}
+.softCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divAcD{
+    color:#0091ff ;
+    width:90%;
+    border: 1px solid #0091ff;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.divAc{
+    color:rgb(55, 0, 150) ;
+    width:90%;
+    border: 1px solid rgb(55, 0, 150);
+    padding: 10px 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.acor{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.714);
+    width: 90%;
+}
+.acorD{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.714);
+    width: 90%;
+}
+.b{
+    color: #ff4400;
 }

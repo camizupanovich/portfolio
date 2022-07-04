@@ -27,9 +27,11 @@
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.251);
     margin-bottom: 60px;
 }
-
-.paper{
+.ahref{
     width: 50%;
+}
+.paper{
+    width: 100%;
 }
 .footer{
     background-color: rgb(203, 203, 203);
@@ -50,7 +52,7 @@
         font-size: 25px;
         margin-bottom: 40px;
     }
-    .paper{
+    .ahref{
         width: 70%;
     }
 }

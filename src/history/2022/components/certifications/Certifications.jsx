@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Certifications.module.css';
-import henry from '../../assets/henry_certificate.svg';
+import henry from '../../../../assets/henry_certificate.svg';
 
 export default function Certifications({dark}){
     return(<>

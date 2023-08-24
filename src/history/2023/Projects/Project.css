@@ -1,0 +1,21 @@
+.imgP {
+    filter: saturate(0%);
+    transition: 1s;
+    cursor: pointer;
+    min-width: 210px;
+    max-width: 410px;
+    /* 
+     background-color: backgroundColorPrimary */
+}
+
+.imgP:hover {
+    filter: saturate(150%);
+    transform: scale(110%);
+    z-index: 10;
+}
+
+.imgP:focus {
+    filter: saturate(150%);
+    transform: scale(110%);
+    z-index: 10;
+}

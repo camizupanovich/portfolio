@@ -8,7 +8,7 @@ import Avatar from "../Avatar/Avatar";
 import { useState } from "react";
 
 
-export default function Landing(){
+export default function Landing2022(){
     const [modal,setModal]=useState(false);
     const [dark,setDark]=useState(false);
     const darkStyles = {
@@ -24,7 +24,7 @@ export default function Landing(){
     return(
         <> 
         <div  style={dark? darkStyles: ligthStyles}  className={s.appBar}>
-            <a href='#home'><img src={dark? require('../../assets/logo_D.png'): require('../../assets/logo_W.png') } width='30px' alt='camila'/></a>
+            <a href='#home'><img src={dark? require('../../../../assets/logo_D.png'): require('../../../../assets/logo_W.png') } width='30px' alt='camila'/></a>
             <div>
             <a href='#skills' style={dark? darkStyles: ligthStyles} className={s.item}>Skills</a>
             <a href='#projects' style={dark? darkStyles: ligthStyles} className={s.item}>Projects</a>

@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Avatar.module.css';
-import avatar from '../../assets/profile-pic.png'
+import avatar from '../../../../assets/profile-pic.png'
 import { useState } from "react";
 
 export default function Avatar(){

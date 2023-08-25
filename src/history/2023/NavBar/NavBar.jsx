@@ -20,6 +20,7 @@ import DownloadIcon from '@mui/icons-material/Download'
 import avatar from '../../../assets/pic.png';
 import { Avatar } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import SharedButton from '../shared/SharedButton'
 
 export default function NavBar(props) {
     const { window } = props;
@@ -82,13 +83,15 @@ export default function NavBar(props) {
                     >
                         <MenuIcon />
                     </IconButton>
+                    <div>
                     {props.theme === 'dark' ?
                         <IconButton aria-label="Example" sx={{ color: 'white' }} onClick={handleChangeMode}>
                             <WbSunnyOutlinedIcon />
                         </IconButton> :
                         <IconButton aria-label="Example" sx={{ color: props.textColor }} onClick={handleChangeMode}>
                             <DarkModeOutlinedIcon />
-                        </IconButton>}
+                        </IconButton>}<SharedButton title={props.data.project.shareTitle} textColor={props.textColor} fontColor={props.fontColor}/>
+                        </div>
                 </Toolbar>
             </AppBar>
             <Box component="nav">

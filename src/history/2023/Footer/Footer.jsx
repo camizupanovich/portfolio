@@ -56,7 +56,7 @@ export default function Footer(props) {
                     </a>
                 ))}
                 {props.data.footer.repoHistory.map((item) => (
-                    <a key={item.name} href={item.url} target="_blank" style={{ textDecoration: 'none', color: props.fontColor,margin:'7px',opacity:0.6 }} >{item.name}
+                    <a key={item.name} rel="noreferrer" href={item.url} target="_blank" style={{ textDecoration: 'none', color: props.fontColor,margin:'7px',opacity:0.6 }} >{item.name}
                     </a>
                 ))}
             </div>

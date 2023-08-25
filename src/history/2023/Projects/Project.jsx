@@ -13,7 +13,7 @@ import './Project.css'
 import { Typography, Divider, IconButton } from "@mui/material";
 import LinkIcon from '@mui/icons-material/Link';
 import CloseIcon from '@mui/icons-material/Close';
-import GitHubIcon from '@mui/icons-material/GitHub';
+//import GitHubIcon from '@mui/icons-material/GitHub';
 import {
     FacebookShareButton, FacebookIcon,
     FacebookMessengerIcon, FacebookMessengerShareButton,

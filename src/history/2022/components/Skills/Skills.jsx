@@ -35,18 +35,18 @@ export default function Skills({dark}){
             <div className={s.cols}>
             <h1 className={s.title}>Tech Skills</h1>
             <div className={s.imgCont}>
-                <img className={s.img} src={require('../../../../assets/skills/javascript.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/react.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/redux.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/node.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/postgresql.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/express.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/babel.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/git.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/sequelize.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/html.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/css.png')}/>
-                <img className={s.img} src={require('../../../../assets/skills/typescript.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/javascript.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/react.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/redux.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/node.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/postgresql.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/express.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/babel.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/git.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/sequelize.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/html.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/css.png')}/>
+                <img alt='tech skills' className={s.img} src={require('../../../../assets/skills/typescript.png')}/>
             </div>
             </div>
             <div className={s.cols}>

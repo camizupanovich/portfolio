@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+//import { Typography } from "@mui/material";
 import colors from "../helpers/colors";
 import './About.css'
 import Technologies from "../Technologies/Technologies";

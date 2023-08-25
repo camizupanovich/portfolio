@@ -28,7 +28,7 @@ function App() {
   const textColor = theme === 'dark' ? colors.text.dark : colors.text.light;
   const fontColor = theme === 'dark' ? colors.font.dark : colors.font.light;
   const textOposite = theme === 'dark' ? colors.text.light : colors.text.dark;
-  const blurBgColor= theme==='dark'?'rgba(0, 0, 0, 0.11)':'rgba(255, 255, 255, 0.171)';
+  const blurBgColor= theme==='dark'?'rgba(0, 0, 0, 0.11)':'rgba(255, 255, 255, 0.445)';
   /* SideBar configuration and setState */
   let [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {

@@ -7,9 +7,6 @@ import Technologies from "../Technologies/Technologies";
 export default function About({ data, backgroundColorSecondary, backgroundColorPrimary, textColor, fontColor, textOposite }) {
     return (
         <>
-            <div style={{ width: '100vw', padding: '15px 30px', display: 'flex', justifyContent: 'center', backgroundColor: backgroundColorSecondary }}>
-                <Typography variant="overline" display="block" sx={{ color: fontColor, textAlign: 'center' }} ><span>{data.about.phrase[0]} </span><strong style={{ fontStyle: 'italic' }}> - chatGPT</strong></Typography>
-            </div>
             <div style={{ width: '100vw', height: '78vh', backgroundImage: 'url("https://www.lux-review.com/wp-content/uploads/2019/09/pet.jpg")', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', backgroundPosition: 'center', alignItems: 'center', flexDirection: 'row', justifyContent: 'flex-end' }}>
                 <strong style={{ color: textColor, fontSize: '72px', paddingRight: '20px', fontWeight: 'bolder' }}>PET FRIENDLY</strong>
             </div>

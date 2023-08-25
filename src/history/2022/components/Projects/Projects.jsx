@@ -31,7 +31,7 @@ export default function Projects({dark}){
             <div key={p.id} className={s.divproj}>
                 <div className={s.contImg}>
                     <img src={p.image} alt='project' className={s.img}/>
-                    <a href={p.url} target='_blank' className={dark? s.linkD : s.link}><span>VISIT APP</span>
+                    <a rel="noreferrer" href={p.url} target='_blank' className={dark? s.linkD : s.link}><span>VISIT APP</span>
                     {dark? <i className='bx bx-link-external' style={{color:'#ffffff'}} ></i>:<i className='bx bx-link-external'></i>}</a>
                 </div>
                 <div className={s.divText}>

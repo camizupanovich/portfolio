@@ -24,18 +24,18 @@ export default function Footer(props) {
     return (
         <footer style={{ display: 'flex', flexDirection: 'column', width: '100vw', padding: '160px 0px 30px 0px', alignItems: 'center' }}>
                 <ThemeProvider theme={theming}>
-                    <a href={props.data.cv.url} download="CamilaZupanovich"><Button variant="contained" size="small" startIcon={<DownloadIcon />} sx={{ mt: 2, mb: 3 }}>{props.data.cv.title}</Button></a>
+                    <a rel="noreferrer" href={props.data.cv.url} download="CamilaZupanovich"><Button variant="contained" size="small" startIcon={<DownloadIcon />} sx={{ mt: 2, mb: 3 }}>{props.data.cv.title}</Button></a>
                 </ThemeProvider>
             <div>
-                <a href='https://wa.me/+541161237441' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>
+                <a rel="noreferrer" href='https://wa.me/+541161237441' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>
                     <WhatsAppIcon sx={{ fontSize: 36 }} />
                 </IconButton>
                 </a>
-                <a href='https://www.linkedin.com/in/camila-antonela-florencia-zupanovich/' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>
+                <a rel="noreferrer" href='https://www.linkedin.com/in/camila-antonela-florencia-zupanovich/' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>
                     <LinkedInIcon sx={{ fontSize: 36 }} />
                 </IconButton>
                 </a>
-                <a href='https://github.com/camizupanovich' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>
+                <a rel="noreferrer" href='https://github.com/camizupanovich' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>
                     <GitHubIcon sx={{ fontSize: 36 }} />
                 </IconButton>
                 </a>

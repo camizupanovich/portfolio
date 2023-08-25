@@ -51,7 +51,7 @@ export default function NavBar(props) {
                 </Typography>
             </div>
             <ThemeProvider theme={theming}>
-                <a href={props.data.cv.url} download="CamilaZupanovich"><Button variant="outlined" size="small" startIcon={<DownloadIcon />} sx={{ mb: 2}}>{props.data.cv.title}</Button></a>
+                <a rel="noreferrer" href={props.data.cv.url} download="CamilaZupanovich"><Button variant="outlined" size="small" startIcon={<DownloadIcon />} sx={{ mb: 2}}>{props.data.cv.title}</Button></a>
             </ThemeProvider>
             <Divider />
             <List>

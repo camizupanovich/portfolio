@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, TextField, Typography, MenuItem, Select, InputLabel,FormControl } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { countries } from "../helpers/countries";
+import SendIcon from '@mui/icons-material/Send'
 import Swal from 'sweetalert2'; 
 export default function Contact({ data, backgroundColorPrimary, textColor, fontColor }) {
     const theming = createTheme({
@@ -108,7 +109,7 @@ export default function Contact({ data, backgroundColorPrimary, textColor, fontC
                         variant="outlined" fullWidth
                         required
                     />
-                    <Button sx={{ my: 3, width: '100%' }} type="submit" variant="contained">{data.contact.button}</Button>
+                    <Button sx={{ my: 3, width: '100%' }} type="submit" variant="contained" endIcon={<SendIcon />}>{data.contact.button}</Button>
                 </div>
             </ThemeProvider>
         </form>

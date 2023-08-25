@@ -24,11 +24,11 @@ export default function Landing2022(){
     return(
         <> 
         <div  style={dark? darkStyles: ligthStyles}  className={s.appBar}>
-            <a href='#home'><img src={dark? require('../../../../assets/logo_D.png'): require('../../../../assets/logo_W.png') } width='30px' alt='camila'/></a>
+            <a rel="noreferrer" href='#home'><img src={dark? require('../../../../assets/logo_D.png'): require('../../../../assets/logo_W.png') } width='30px' alt='camila'/></a>
             <div>
-            <a href='#skills' style={dark? darkStyles: ligthStyles} className={s.item}>Skills</a>
-            <a href='#projects' style={dark? darkStyles: ligthStyles} className={s.item}>Projects</a>
-            <a href='#certifications' style={dark? darkStyles: ligthStyles} className={s.item}>Certificates</a></div>
+            <a rel="noreferrer" href='#skills' style={dark? darkStyles: ligthStyles} className={s.item}>Skills</a>
+            <a rel="noreferrer" href='#projects' style={dark? darkStyles: ligthStyles} className={s.item}>Projects</a>
+            <a rel="noreferrer" href='#certifications' style={dark? darkStyles: ligthStyles} className={s.item}>Certificates</a></div>
             <div>
             {dark? 
             <i onClick={()=>setDark(false)} className='bx bxs-sun bx-md' style={{color:'#ffffff'}} ></i>:

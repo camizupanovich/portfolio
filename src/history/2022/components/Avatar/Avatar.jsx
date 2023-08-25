@@ -17,9 +17,9 @@ export default function Avatar(){
                     <button className={s.btnR}  onClick={()=>{setCv(!cv)}}> Download CV <i class='bx bxs-cloud-download bx-sm' style={{color:'#ffffff'}}  ></i> </button>
                 </div>
                 {cv? <div className={s.language}>
-                        <a href="https://drive.google.com/file/d/1HmJoCKRt63SUigzNQbfwsyibZqpRPUS2/view?usp=sharing" download='cv' target='_blank'>
+                        <a rel="noreferrer" href="https://drive.google.com/file/d/1HmJoCKRt63SUigzNQbfwsyibZqpRPUS2/view?usp=sharing" download='cv' target='_blank'>
                         <img className={s.imgL} src='https://livedoor.blogimg.jp/ilovespain/imgs/1/3/13f7ed1d.png' alt='spanish'  height='20px'/></a>
-                        <a href="https://drive.google.com/file/d/15YJxVAqwiF_sUms_Osxx9nMff96tBFLr/view?usp=sharing" target='_blank' download='cv'>
+                        <a rel="noreferrer" href="https://drive.google.com/file/d/15YJxVAqwiF_sUms_Osxx9nMff96tBFLr/view?usp=sharing" target='_blank' download='cv'>
                         <img className={s.imgL} src='https://latelierplurilingue.files.wordpress.com/2019/01/union-jack-1027898_640.jpg?w=600' height='20px' alt='english'/>
                         </a>
                     </div>

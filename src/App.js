@@ -28,6 +28,7 @@ function App() {
   const textColor = theme === 'dark' ? colors.text.dark : colors.text.light;
   const fontColor = theme === 'dark' ? colors.font.dark : colors.font.light;
   const textOposite = theme === 'dark' ? colors.text.light : colors.text.dark;
+  const blurBgColor= theme==='dark'?'rgba(0, 0, 0, 0.11)':'rgba(255, 255, 255, 0.171)';
   /* SideBar configuration and setState */
   let [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
@@ -53,7 +54,7 @@ function App() {
             <NavBar theme={theme} mobileOpen={mobileOpen} data={data} toggleTheme={toggleTheme} handleScroll={handleScroll} handleDrawerToggle={handleDrawerToggle} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} >
             </NavBar>
             <Hero textColor={textColor} fontColor={fontColor} textOposite={textOposite} data={data} />
-            <div id='P-3'><Project backgroundColorPrimary={backgroundColorPrimary} data={data} fontColor={fontColor} textOposite={textOposite} /></div>
+            <div id='P-3'><Project blurBgColor={blurBgColor} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} data={data} fontColor={fontColor} textOposite={textOposite} /></div>
             <div id='A-1'><About backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} data={data} /></div>
             <div id='S-2'><Services backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} data={data} /></div>
             <div id='C-4'><Contact backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} data={data} /></div>

@@ -20,7 +20,7 @@ import Footer from './history/2023/Footer/Footer';
 function App() {
   /* Language set data */
   const lang = navigator.language || navigator.userLanguage;
-  const data = lang == 'es-419' ? esp : en;
+  const data = lang === 'es-419' ? esp : en;
   /* Theme mode and color configuration vars */
   let [theme, setTheme] = useState('dark');
   const backgroundColorSecondary = theme === 'dark' ? colors.bgSecondary.dark : colors.bgSecondary.light;
@@ -28,7 +28,7 @@ function App() {
   const textColor = theme === 'dark' ? colors.text.dark : colors.text.light;
   const fontColor = theme === 'dark' ? colors.font.dark : colors.font.light;
   const textOposite = theme === 'dark' ? colors.text.light : colors.text.dark;
-  const blurBgColor = theme === 'dark' ? 'rgba(0, 0, 0, 0.11)' : 'rgba(255, 255, 255, 0.445)';
+  const blurBgColor = theme === 'dark' ? 'rgba(0, 0, 0, 0.445)' : 'rgba(255, 255, 255, 0.445)';
   /* SideBar configuration and setState */
   let [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {

@@ -24,7 +24,7 @@ export default function Footer(props) {
     return (
         <footer style={{ display: 'flex', flexDirection: 'column', width: '100vw', padding: '160px 0px 30px 0px', alignItems: 'center' }}>
                 <ThemeProvider theme={theming}>
-                    <a rel="noreferrer" href={props.data.cv.url} download="CamilaZupanovich"><Button variant="contained" size="small" startIcon={<DownloadIcon />} sx={{ mt: 2, mb: 3 }}>{props.data.cv.title}</Button></a>
+                    <a rel="noreferrer" href={props.data.cv.url} style={{textDecoration:'none'}} download="CamilaZupanovich"><Button variant="contained" size="small" startIcon={<DownloadIcon />} sx={{ mt: 2, mb: 3 }}>{props.data.cv.title}</Button></a>
                 </ThemeProvider>
             <div>
                 <a rel="noreferrer" href='https://wa.me/+541161237441' target='_blank'><IconButton aria-label="Example" sx={{ color: props.textColor, margin: '5px' }}>

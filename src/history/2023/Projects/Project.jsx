@@ -14,6 +14,7 @@ import { Typography, Divider, IconButton } from "@mui/material";
 import LinkIcon from '@mui/icons-material/Link';
 import CloseIcon from '@mui/icons-material/Close';
 //import GitHubIcon from '@mui/icons-material/GitHub';
+import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
 import {
     FacebookShareButton, FacebookIcon,
     FacebookMessengerIcon, FacebookMessengerShareButton,
@@ -30,14 +31,24 @@ import { useState } from "react";
 export default function Project({ data, backgroundColorPrimary, backgroundColorSecondary, fontColor, textOposite, blurBgColor }) {
     const [openShare, setOpenShare] = useState(false);
     const [shareUrl, setShareUrl] = useState('');
-    const handleShare = (e) => {
+    const [copy, setCopy] = useState(false)
+    const handleShare = (url) => {
         setOpenShare(!openShare);
-        if (e === null) {
-            setShareUrl('')
+        if (openShare) {
+            setShareUrl('');
         } else {
-            setShareUrl(e)
+            setShareUrl(url);
         }
     }
+    const copiarAlPortapapeles = () => {
+        navigator.clipboard.writeText(shareUrl)
+            .then(() => {
+                setCopy(true);
+                setTimeout(() => {
+                    setCopy(false)
+                }, 3500);
+            })
+    };
     const project = [{ name: "First Angular App", image: FirstAngular, link: 'https://first-angular-gamma.vercel.app/home', repository: '', }, { name: 'Miranda Fan Page', image: MirandaFanPage, link: 'https://miranda-fan-page.vercel.app/', repository: '', }, { name: 'Limboteams Clon', image: Limboteams, link: 'https://limboteams-clon.vercel.app/', repository: '', }, { name: 'Lets Cook', image: LetsCook, link: 'https://letscook-omega.vercel.app/', repository: '', }, { name: 'Finder', image: Finder, link: 'https://finder-app-omega.vercel.app/', repository: '', }, { name: 'Findog', image: FindDog, link: 'https://vercel.com/camizupanovich/findog-app', repository: '', }, { name: 'Weather App', image: WeatherApp, link: 'https://weather-app-navy-omega.vercel.app/', repository: '', }, { name: 'Spoti App', image: SpotiApp, link: 'https://angular-spoti-app.vercel.app/', repository: '', }, { name: 'Rick & Morti', image: RickAndMorty, link: 'https://rick-and-morty-gold-chi.vercel.app/', repository: '', }, { name: 'Ehupi', image: Ehupi, link: 'https://ehupi-software.vercel.app/', repository: '', }]
     return (
         <>
@@ -125,6 +136,15 @@ export default function Project({ data, backgroundColorPrimary, backgroundColorS
                         </EmailShareButton>
                         <Typography variant="caption" display="block" sx={{ color: 'rgb(80,80,80)' }} >Email</Typography>
                     </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', with: '70px', alignItems: 'center', position: 'relative' }}>
+                        <div style={{ height: '49.34px' }}>
+                            <IconButton onClick={copiarAlPortapapeles} style={{ width: '42px', height: '42px', backgroundColor: '#f9f9f9' }} >
+                                <ContentCopyRoundedIcon />
+                            </IconButton>
+                        </div>
+                        <Typography variant="caption" display="block" sx={{ color: 'rgb(80,80,80)' }} >Copy link</Typography>
+                        {copy && <div style={{ position: 'absolute', backgroundColor: 'rgba(255, 255, 255, 0.479)', color: 'black', textAlign: 'center', width: '42px', height: '42px', borderRadius: '50%', top: '0px', left: '0px', fontSize: '10px',display:'flex',alignItems:'center',justifyContent:'center' }}>Copied</div>}
+                    </div>
                     <div style={{ position: 'absolute', top: '10px', right: '10px' }}>
                         <IconButton onClick={() => handleShare(null)}>
                             <CloseIcon size={24} />
@@ -132,7 +152,7 @@ export default function Project({ data, backgroundColorPrimary, backgroundColorS
                     </div>
                 </div>
             </div>}
-            
+
             <div style={{ width: '100vw', padding: '15px 30px', display: 'flex', justifyContent: 'center', backgroundColor: backgroundColorSecondary }}>
                 <Typography variant="overline" display="block" sx={{ color: fontColor, textAlign: 'center' }} ><span>{data.project.phrase[1]} </span><strong style={{ fontStyle: 'italic' }}> - chatGPT</strong></Typography>
             </div>

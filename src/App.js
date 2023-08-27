@@ -54,8 +54,8 @@ function App() {
             <NavBar theme={theme} mobileOpen={mobileOpen} data={data} toggleTheme={toggleTheme} handleScroll={handleScroll} handleDrawerToggle={handleDrawerToggle} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} >
             </NavBar>
             <Hero textColor={textColor} fontColor={fontColor} textOposite={textOposite} data={data} />
-            <div id='P-3'><Project blurBgColor={blurBgColor} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} data={data} fontColor={fontColor} textOposite={textOposite} /></div>
             <div id='A-1'><About backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} data={data} /></div>
+            <div id='P-3'><Project blurBgColor={blurBgColor} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} data={data} fontColor={fontColor} textOposite={textOposite} /></div>
             <div id='S-2'><Services backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} data={data} /></div>
             <div id='C-4'><Contact backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} data={data} /></div>
             <Footer theme={theme} mobileOpen={mobileOpen} data={data} toggleTheme={toggleTheme} handleScroll={handleScroll} handleDrawerToggle={handleDrawerToggle} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} />

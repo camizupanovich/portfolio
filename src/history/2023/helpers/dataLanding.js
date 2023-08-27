@@ -13,7 +13,13 @@ export const esp = {
         shareTitle: 'Compartir ...'
     },
     about: {
-        phrase: []
+        phrase: [
+            'Con un enfoque en la actualización constante de tecnologías y la adaptación a las últimas tendencias, he trabajado en una amplia gama de proyectos desafiantes. Desde el desarrollo de aplicaciones con arquitectura micro front-end hasta la creación de interfaces de usuario mediante librerías innovadoras, mi trayectoria abarca desde sitios web corporativos y tiendas virtuales hasta redes sociales especializadas para el ámbito laboral, todo ello con un back office integrado para una gestión fluida.',
+            'Mi conjunto de habilidades incluye el dominio de Node.js, Angular, React, Redux, Next.js, así como JavaScript y TypeScript. Además, cuento con experiencia en el manejo de versiones, despliegue de aplicaciones, animaciones, diseño desde cero en Figma y maquetación responsive para asegurar un rendimiento óptimo en cualquier dispositivo.',
+            'Ser desarrollador Front-End lo considero como el arte de la adaptación. Cada diseño se ajusta a cada pantalla, creando una experiencia impecable sin importar el dispositivo. Es como un rompecabezas visual que se ensambla perfectamente.',
+            'Mi pasión por la creación y la resolución de problemas me ha permitido integrar bibliotecas y APIs de manera efectiva, tales como mapbox, mercado pago, auth0, firebase, socketio, igniteui, paypal,entro otras.',
+            'Además de mi experiencia técnica, mi habilidad para colaborar en equipos ágiles y mi compromiso con la mejora constante me permiten aportar soluciones efectivas y entregables de alta calidad. Siempre estoy emocionada de asumir nuevos desafíos y explorar nuevas tecnologías.'
+        ]
     },
     recommendations: [
         {
@@ -249,7 +255,13 @@ export const en = {
         shareTitle: 'Share...'
     },
     about: {
-        phrase: []
+        phrases: [
+            "With a focus on constant technology updates and adaptation to the latest trends, I have worked on a wide range of challenging projects. From developing applications with micro front-end architecture to creating user interfaces using innovative libraries, my journey spans from corporate websites and online stores to specialized social networks for the professional field, all with an integrated back office for smooth management.",
+            "My skill set includes mastery of Node.js, Angular, React, Redux, Next.js, as well as JavaScript and TypeScript. Furthermore, I have experience in version control, application deployment, animations, designing from scratch in Figma, and responsive layout to ensure optimal performance on any device.",
+            "I consider being a Front-End developer as the art of adaptation. Each design fits every screen, creating a seamless experience regardless of the device. It's like a visual puzzle that assembles perfectly.",
+            "My passion for creation and problem-solving has allowed me to effectively integrate libraries and APIs, such as Mapbox, Mercado Pago, Auth0, Firebase, Socket.IO, Ignite UI, PayPal, among others.",
+            "In addition to my technical experience, my ability to collaborate in agile teams and my commitment to constant improvement enable me to provide effective solutions and high-quality deliverables. I'm always excited to take on new challenges and explore new technologies."
+        ]
     },
     recommendations: [
         {

@@ -10,9 +10,9 @@ export default function About({ data, backgroundColorSecondary, backgroundColorP
                 <strong style={{ color: textOposite, fontSize: '86px', paddingLeft: '20px', fontWeight: 'bolder' }}>COFFEE & CODE LOVER</strong>
             </div>
             <Technologies backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} data={data} />
-            <div className="bg-img-pet">
+            {/* <div className="bg-img-pet">
                 <strong style={{ color: textColor, fontSize: '72px', paddingRight: '20px', fontWeight: 'bolder' }}>PET FRIENDLY</strong>
-            </div>
+            </div> */}
             <div className="bg-img-team">
                 <strong style={{ color: textOposite, fontSize: '86px', paddingLeft: '20px', fontWeight: 'bolder', cursor: 'pointer' }}>TEAM PLAYER</strong>
             </div>

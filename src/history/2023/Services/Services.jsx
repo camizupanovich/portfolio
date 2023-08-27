@@ -30,7 +30,7 @@ export default function Services({ data, backgroundColorPrimary, textColor }) {
             <div className="screen" id="tablet">
                 <div className="img">
                     {turned && data?.services?.map((e, index) => (
-                        <button className="grid screenOn" key={index} id={`grid-${index}`} onClick={() => getTech(e, `grid-${index}`)}><WidgetsRoundedIcon style={{ color: 'rgb(28, 28, 28)', opacity: 0.4, fontSize: '56px' }} /></button>
+                        <button className="grid screenOn" key={index} id={`grid-${index}`} name={e.name} onClick={() => getTech(e, `grid-${index}`)}><WidgetsRoundedIcon style={{ color: 'rgb(28, 28, 28)', opacity: 0.4, fontSize: '56px' }} /></button>
                     ))}{/* <small style={{ textAlign: 'center' }}>{e.icon}</small> */}
                 </div>
                 <button onClick={turnTabletOn} id="turnedBtn" className="button"></button>

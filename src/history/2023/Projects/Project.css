@@ -1,7 +1,21 @@
+.bg-img-coffee {
+    width: 100vw;
+    height: 78vh;
+    background-image: url("https://camila-zupanovich.vercel.app/assets/coffe-desktop.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative
+}
+
 .imgContainer {
     position: relative;
     display: inline-block;
-    overflow: hidden; /* Para mantener el contenido dentro del contenedor */
+    overflow: hidden;
+    /* Para mantener el contenido dentro del contenedor */
     cursor: pointer;
     min-width: 210px;
     max-width: 410px;
@@ -39,7 +53,8 @@
 .imgContainer:hover .infoContainer {
     opacity: 1;
 }
-.socialContainer{
+
+.socialContainer {
     display: flex;
     justify-content: center;
     align-items: center;

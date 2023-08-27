@@ -7,7 +7,7 @@ export const esp = {
     },
     project: {
         phrase: [
-            '“El conocimiento es aprender algo todos los días. La sabiduría es dejar ir algo todos los días.”',
+            '“Vivo conforme al lema "Aprender cada día es adquirir conocimiento; soltar cada día es obtener sabiduría", una guía que ha dado forma a mi camino en el desarrollo. Cada proyecto de práctica, cada desafío superado y cada oportunidad de entrenamiento han actuado como puentes hacia un aprendizaje constante”',
             '“En cada paso del camino, se esconden destellos de asombro, si tenemos los ojos abiertos para verlos.”'
         ],
         shareTitle: 'Compartir ...'
@@ -35,7 +35,7 @@ export const esp = {
             description: 'Python || Django || Mysql || MongoDb',
             urlProfile: 'https://www.linkedin.com/in/nicolas-suasnavar/',
             date: '24 de Junio de 2022',
-            content: '“Camila cuenta con grandes capacidades de trabajo en equipo, una genia en el front aportando estilos de forma destacable, ademas de otros grandes aportes, como la seccion de administativa de nuestra pagina.En definitiva una gran compañera de equipo.”',
+            content: '“Camila cuenta con grandes capacidades de trabajo en equipo, una genia en el front aportando estilos de forma destacable, ademas de otros grandes aportes, como la seccion de administrativa de nuestra pagina.En definitiva una gran compañera de equipo.”',
             avatar: 'https://media.licdn.com/dms/image/D4D03AQG2M4Mf756VEw/profile-displayphoto-shrink_800_800/0/1676420622238?e=1698278400&v=beta&t=pBO_saze7YSWHywLuvewJYi0gqod6zr9ORGP-vgV8aY'
         },
         {
@@ -43,7 +43,7 @@ export const esp = {
             description: 'Software Developer',
             urlProfile: 'https://www.linkedin.com/in/jose-colmenares-480074233/',
             date: '24 de Junio de 2022',
-            content: '“Hace una semana tuve el placer de trabajar en grupo con camila, desarrollando el proyecto filnal en henry "Finder", me gusto la forma en como trabajaba cami, siempre participando y aportando muchas ideas buena al proyecto, cami es una persona muy creativa y proactiva con muchas ganas de seguir aprendiendo. sin duda haría devuelta equipo con ella.”',
+            content: '“Hace una semana tuve el placer de trabajar en grupo con camila, desarrollando el proyecto final en henry "Finder", me gusto la forma en como trabajaba cami, siempre participando y aportando muchas ideas buenas al proyecto, cami es una persona muy creativa y proactiva con muchas ganas de seguir aprendiendo. sin duda haría devuelta equipo con ella.”',
             avatar: 'https://media.licdn.com/dms/image/D4D03AQExDFyztY5LWg/profile-displayphoto-shrink_800_800/0/1686671381041?e=1698278400&v=beta&t=Km9n67-4NcSN4znblq-E20GXWp7HLwgO_DyYMDpDwsE'
         }
     ],
@@ -249,7 +249,7 @@ export const en = {
     },
     project: {
         phrase: [
-            '“Knowledge is learning something new every day. Wisdom is letting go of something every day”',
+            '“I live by the motto "Learning each day is gaining knowledge; letting go each day is gaining wisdom," a guiding principle that has shaped my path in development. Each practice project, every conquered challenge, and each training opportunity have acted as bridges to continuous learning.”',
             '“At every step along the way, flashes of wonder are concealed, if only we have our eyes open to see them.”'
         ],
         shareTitle: 'Share...'

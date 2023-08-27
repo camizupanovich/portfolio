@@ -1,7 +1,8 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import './Hero.css'
 export default function Hero({ data,textColor,fontColor,textOposite }){
-    return(<div style={{ color: fontColor, padding: '30px', width: '100vw', minHeight: '100vh', backgroundImage: 'url("https://i.imgur.com/3Zb9wO3.png")', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+    return(<div style={{ color: fontColor, padding: '30px'}} className="bg-img-hero">
     <Typography variant="h1" display="block" sx={{ color: textColor, maxWidth: '700px', marginTop: '90px' }} >
         {data.hero.title}
     </Typography>

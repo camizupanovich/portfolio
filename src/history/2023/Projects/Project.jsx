@@ -52,9 +52,6 @@ export default function Project({ data, backgroundColorPrimary, backgroundColorS
     const project = [{ name: "First Angular App", image: FirstAngular, link: 'https://first-angular-gamma.vercel.app/home', repository: '', }, { name: 'Miranda Fan Page', image: MirandaFanPage, link: 'https://miranda-fan-page.vercel.app/', repository: '', }, { name: 'Limboteams Clon', image: Limboteams, link: 'https://limboteams-clon.vercel.app/', repository: '', }, { name: 'Lets Cook', image: LetsCook, link: 'https://letscook-omega.vercel.app/', repository: '', }, { name: 'Finder', image: Finder, link: 'https://finder-app-omega.vercel.app/', repository: '', }, { name: 'Findog', image: FindDog, link: 'https://vercel.com/camizupanovich/findog-app', repository: '', }, { name: 'Weather App', image: WeatherApp, link: 'https://weather-app-navy-omega.vercel.app/', repository: '', }, { name: 'Spoti App', image: SpotiApp, link: 'https://angular-spoti-app.vercel.app/', repository: '', }, { name: 'Rick & Morti', image: RickAndMorty, link: 'https://rick-and-morty-gold-chi.vercel.app/', repository: '', }, { name: 'Ehupi', image: Ehupi, link: 'https://ehupi-software.vercel.app/', repository: '', }]
     return (
         <>
-            <div className=".bg-img-coffee">
-                <strong style={{ color: textOposite, fontSize: '86px', paddingLeft: '20px', fontWeight: 'bolder' }}>COFFEE & CODE LOVER</strong>
-            </div>
             <div style={{ width: '100vw', padding: '30px 0px', backgroundColor: backgroundColorPrimary, position: 'relative', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', position: 'relative', maxWidth: '1280px' }}>
                     <Typography variant="overline" display="block" sx={{ color: fontColor, textAlign: 'center', padding: '30px', maxWidth: '600px' }} >{data.project.phrase[0]} </Typography>

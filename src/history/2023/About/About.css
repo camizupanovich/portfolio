@@ -5,35 +5,9 @@
   height: 100vh;
 }
 
-.orbit {
-  position: relative;
-  width: 300px;
-  height: 150px;
-  border-radius: 50%;
-  animation: rotateOrbit 10s linear infinite;
-}
-
-.element {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  border-radius: 50%;
-}
-
-@keyframes rotateOrbit {
-  0% {
-    transform: translateX(150px) translateY(0) rotate(0deg);
-  }
-  100% {
-    transform: translateX(150px) translateY(0) rotate(360deg);
-  }
-}
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
 figure.snip1157 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -46,12 +20,14 @@ figure.snip1157 {
   text-align: left;
   box-shadow: none !important;
 }
+
 figure.snip1157 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
+
 figure.snip1157 img {
   max-width: 100%;
   vertical-align: middle;
@@ -61,6 +37,7 @@ figure.snip1157 img {
   margin: 40px 0 0 10px;
   filter: saturate(20%);
 }
+
 figure.snip1157 blockquote {
   display: block;
   border-radius: 8px;
@@ -73,6 +50,7 @@ figure.snip1157 blockquote {
   line-height: 1.6em;
   font-style: italic;
 }
+
 figure.snip1157 blockquote:before,
 figure.snip1157 blockquote:after {
   font-family: 'FontAwesome';
@@ -82,15 +60,18 @@ figure.snip1157 blockquote:after {
   opacity: 0.3;
   font-style: normal;
 }
+
 figure.snip1157 blockquote:before {
   top: 25px;
   left: 20px;
 }
+
 figure.snip1157 blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 0;
 }
+
 figure.snip1157 .arrow {
   top: 100%;
   width: 0;
@@ -101,6 +82,7 @@ figure.snip1157 .arrow {
   margin: 0;
   position: absolute;
 }
+
 figure.snip1157 .author {
   position: absolute;
   bottom: 45px;
@@ -111,13 +93,72 @@ figure.snip1157 .author {
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
 }
+
 figure.snip1157 .author h5 {
   opacity: 0.8;
   margin: 0;
   font-weight: 800;
 }
+
 figure.snip1157 .author h5 span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
+}
+
+.bg-img-coffee {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: url("../../../../public/assets/coffee-desktop.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 'center';
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative
+}
+
+.bg-img-pet {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: url("../../../../public/assets/pet-desktop.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 'center';
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.bg-img-team {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: url("../../../../public/assets/team-desktop.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 'center';
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .bg-img-coffee {
+    background-image: url("../../../../public/assets/coffee-mobile.png");
+  }
+
+  .bg-img-pet {
+    background-image: url("../../../../public/assets/pet-mobile.png");
+  }
+
+  .bg-img-team {
+    background-image: url("../../../../public/assets/team-mobile.png");
+  }
 }

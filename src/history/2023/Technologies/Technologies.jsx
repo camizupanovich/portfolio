@@ -1,7 +1,6 @@
 import React from "react";
 import './Technologies.css'
 import macbook from '../../../assets/dog_app.png'
-import types from '../../../assets/Typescript.png'
 import { Typography } from "@mui/material";
 
 export default function Technologies({ data, backgroundColorSecondary, backgroundColorPrimary, textColor, fontColor, textOposite }) {

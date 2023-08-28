@@ -27,7 +27,7 @@ import {
 } from 'react-share'
 import ShareIcon from '@mui/icons-material/Share';
 import { useState } from "react";
-import ImageCarousel from "../shared/Carousel";
+//import ImageCarousel from "../shared/Carousel";
 
 export default function Project({ data, backgroundColorPrimary, backgroundColorSecondary, fontColor, textOposite, blurBgColor }) {
     const [openShare, setOpenShare] = useState(false);

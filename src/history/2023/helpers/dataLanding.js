@@ -8,6 +8,7 @@ export const esp = {
     project: {
         phrase: [
             '“Vivo conforme al lema "Aprender cada día es adquirir conocimiento; soltar cada día es obtener sabiduría", una guía que ha dado forma a mi camino en el desarrollo. Cada proyecto de práctica, cada desafío superado y cada oportunidad de entrenamiento han actuado como puentes hacia un aprendizaje constante”',
+            '“He tenido el privilegio de contribuir en proyectos importantes para reconocidas empresas como Allianz, Investors Trust y Cordial. Cada experiencia no solo ha demostrado mi dedicación al crecimiento, sino también mi capacidad para sobresalir en entornos de alto impacto.”',
             '“En cada paso del camino, se esconden destellos de asombro, si tenemos los ojos abiertos para verlos.”'
         ],
         shareTitle: 'Compartir ...'
@@ -250,6 +251,7 @@ export const en = {
     project: {
         phrase: [
             '“I live by the motto "Learning each day is gaining knowledge; letting go each day is gaining wisdom," a guiding principle that has shaped my path in development. Each practice project, every conquered challenge, and each training opportunity have acted as bridges to continuous learning.”',
+            "“I've had the privilege of contributing to significant projects for renowned companies like Allianz, Investors Trust, and Cordial. Each experience has not only showcased my dedication to growth but also my ability to excel in high-impact environments”",
             '“At every step along the way, flashes of wonder are concealed, if only we have our eyes open to see them.”'
         ],
         shareTitle: 'Share...'

@@ -27,11 +27,13 @@ import {
 } from 'react-share'
 import ShareIcon from '@mui/icons-material/Share';
 import { useState } from "react";
+import ImageCarousel from "../shared/Carousel";
 
 export default function Project({ data, backgroundColorPrimary, backgroundColorSecondary, fontColor, textOposite, blurBgColor }) {
     const [openShare, setOpenShare] = useState(false);
     const [shareUrl, setShareUrl] = useState('');
     const [copy, setCopy] = useState(false)
+    const imagenes =['https://th.bing.com/th/id/OIP.BCT06KfpVx3Wf0u0TvN7PgHaFj?w=239&h=180&c=7&r=0&o=5&pid=1.7','https://th.bing.com/th/id/OIP.Ec9uFOKeCw7JxlAvK5cj4gHaEc?w=264&h=180&c=7&r=0&o=5&pid=1.7','https://th.bing.com/th/id/OIP.emPACqNzPQfIwAzNhsLOOgHaBH?w=357&h=58&c=7&r=0&o=5&pid=1.7']
     const handleShare = (url) => {
         setOpenShare(!openShare);
         if (openShare) {
@@ -151,8 +153,12 @@ export default function Project({ data, backgroundColorPrimary, backgroundColorS
             </div>}
 
             <div style={{ width: '100vw', padding: '15px 30px', display: 'flex', justifyContent: 'center', backgroundColor: backgroundColorSecondary }}>
-                <Typography variant="overline" display="block" sx={{ color: fontColor, textAlign: 'center' }} ><span>{data.project.phrase[1]} </span><strong style={{ fontStyle: 'italic' }}> - chatGPT</strong></Typography>
+                <Typography variant="overline" display="block" sx={{ color: fontColor, textAlign: 'center',maxWidth:'900px' }} >{data.project.phrase[1]}</Typography>
             </div>
+            {/* <ImageCarousel images={imagenes}/> */}
+            {/* <div style={{ width: '100vw', padding: '15px 30px', display: 'flex', justifyContent: 'center', backgroundColor: backgroundColorPrimary }}>
+                <Typography variant="overline" display="block" sx={{ color: fontColor, textAlign: 'center' }} ><span>{data.project.phrase[2]} </span><strong style={{ fontStyle: 'italic' }}> - chatGPT</strong></Typography>
+            </div> */}
         </>
     )
 }

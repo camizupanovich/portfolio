@@ -1,21 +1,18 @@
 /* Libraries */
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { useState } from 'react';
-/* Old page Component container */
-import Landing2022 from './history/2022/components/Landing/Landing';
 /* Navigation component */
-import NavBar from './history/2023/NavBar/NavBar';
+import NavBar from './components/NavBar/NavBar';
 /* Sections components */
-import Contact from './history/2023/Contact/Contact';
-import Hero from './history/2023/Hero/Hero';
-import Services from './history/2023/Services/Services';
-import About from './history/2023/About/About';
+import Contact from './components/Contact/Contact';
+import Hero from './components/Hero/Hero';
+import Services from './components/Services/Services';
+import About from './components/About/About';
 /* Style and data helper */
 import s from './App.module.css';
-import colors from './history/2023/helpers/colors';
-import { esp, en } from './history/2023/helpers/dataLanding';
-import Project from './history/2023/Projects/Project';
-import Footer from './history/2023/Footer/Footer';
+import colors from './assets/helpers/colors';
+import { esp, en } from './assets/helpers/dataLanding';
+import Project from './components/Projects/Project';
+import Footer from './components/Footer/Footer';
 
 function App() {
   /* Language set data */
@@ -47,10 +44,6 @@ function App() {
   }
   return (
     <div className={s.app} style={{ minHeight: '100vh !important', backgroundColor: backgroundColorSecondary }}>
-      <Router>
-        <Switch>
-          <Route path='/2022' component={Landing2022} />
-          <Route path='/'>
             <NavBar theme={theme} mobileOpen={mobileOpen} data={data} toggleTheme={toggleTheme} handleScroll={handleScroll} handleDrawerToggle={handleDrawerToggle} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} >
             </NavBar>
             <Hero textColor={textColor} fontColor={fontColor} textOposite={textOposite} data={data} />
@@ -59,9 +52,6 @@ function App() {
             <div id='S-2'><Services backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} data={data} /></div>
             <div id='C-4'><Contact backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} data={data} /></div>
             <Footer theme={theme} mobileOpen={mobileOpen} data={data} toggleTheme={toggleTheme} handleScroll={handleScroll} handleDrawerToggle={handleDrawerToggle} backgroundColorSecondary={backgroundColorSecondary} backgroundColorPrimary={backgroundColorPrimary} textColor={textColor} fontColor={fontColor} textOposite={textOposite} />
-          </Route>
-        </Switch>
-      </Router>
     </div>
   );
 }

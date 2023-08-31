@@ -1,6 +1,6 @@
 import React from "react";
 import './Technologies.css'
-import macbook from '../../assets/images/dog_app.png'
+import dogApp from '../../assets/images/dog_app.png'
 import { Typography } from "@mui/material";
 
 export default function Technologies({ data, backgroundColorSecondary, backgroundColorPrimary, textColor, fontColor, textOposite }) {
@@ -18,7 +18,7 @@ export default function Technologies({ data, backgroundColorSecondary, backgroun
                     </div>
                     <Typography variant="overline" display="block" sx={{ color: textColor, mt:2 }} >{data.about.phrase[1]}</Typography>
                     <div className="responsive-img">
-                        <img src={macbook} alt="macbook" className="macbook"/>
+                        <img src={dogApp} alt="macbook" className="macbook"/>
                         <Typography variant="overline" display="block" sx={{ color: textColor, mt:2 }} >{data.about.phrase[2]} <br/>{data.about.phrase[3]}</Typography>
                     </div>
                     {/* <Typography variant="overline" display="block" sx={{ color: fontColor, mt:2 }} ></Typography> */}
